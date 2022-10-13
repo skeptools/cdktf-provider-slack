@@ -16,7 +16,7 @@ const project = new CdktfProviderProject({
   releaseToNpm: true,
   npmAccess: NpmAccess.PUBLIC,
   repositoryUrl: "git@github.com:skeptools/cdktf-provider-slack.git",
-  terraformProvider: "jmatsu/slack@~> 0.8.1",
+  terraformProvider: "jmatsu/slack@~> 0",
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
