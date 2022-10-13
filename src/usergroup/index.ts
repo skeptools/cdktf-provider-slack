@@ -58,8 +58,8 @@ export class Usergroup extends cdktf.TerraformResource {
       terraformResourceType: 'slack_usergroup',
       terraformGeneratorMetadata: {
         providerName: 'slack',
-        providerVersion: '0.9.0',
-        providerVersionConstraint: '~> 0.9.0'
+        providerVersion: '0.8.1',
+        providerVersionConstraint: '~> 0.8.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

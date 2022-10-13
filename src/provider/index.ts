@@ -47,8 +47,8 @@ export class SlackProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'slack',
       terraformGeneratorMetadata: {
         providerName: 'slack',
-        providerVersion: '0.9.0',
-        providerVersionConstraint: '~> 0.9.0'
+        providerVersion: '0.8.1',
+        providerVersionConstraint: '~> 0.8.1'
       },
       terraformProviderSource: 'jmatsu/slack'
     });

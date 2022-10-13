@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/slack/d/conversation
+// https://www.terraform.io/docs/providers/slack/d/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,52 +6,52 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataSlackConversationConfig extends cdktf.TerraformMetaArguments {
+export interface DataSlackGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/d/conversation#channel_id DataSlackConversation#channel_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/d/group#group_id DataSlackGroup#group_id}
   */
-  readonly channelId: string;
+  readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/d/conversation#id DataSlackConversation#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/d/group#id DataSlackGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/d/conversation#purpose DataSlackConversation#purpose}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/d/group#purpose DataSlackGroup#purpose}
   */
   readonly purpose?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/d/conversation#topic DataSlackConversation#topic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/d/group#topic DataSlackGroup#topic}
   */
   readonly topic?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/slack/d/conversation slack_conversation}
+* Represents a {@link https://www.terraform.io/docs/providers/slack/d/group slack_group}
 */
-export class DataSlackConversation extends cdktf.TerraformDataSource {
+export class DataSlackGroup extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "slack_conversation";
+  public static readonly tfResourceType = "slack_group";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/slack/d/conversation slack_conversation} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/slack/d/group slack_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataSlackConversationConfig
+  * @param options DataSlackGroupConfig
   */
-  public constructor(scope: Construct, id: string, config: DataSlackConversationConfig) {
+  public constructor(scope: Construct, id: string, config: DataSlackGroupConfig) {
     super(scope, id, {
-      terraformResourceType: 'slack_conversation',
+      terraformResourceType: 'slack_group',
       terraformGeneratorMetadata: {
         providerName: 'slack',
         providerVersion: '0.8.1',
@@ -65,7 +65,7 @@ export class DataSlackConversation extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._channelId = config.channelId;
+    this._groupId = config.groupId;
     this._id = config.id;
     this._purpose = config.purpose;
     this._topic = config.topic;
@@ -75,19 +75,6 @@ export class DataSlackConversation extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // channel_id - computed: false, optional: false, required: true
-  private _channelId?: string; 
-  public get channelId() {
-    return this.getStringAttribute('channel_id');
-  }
-  public set channelId(value: string) {
-    this._channelId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get channelIdInput() {
-    return this._channelId;
-  }
-
   // created - computed: true, optional: false, required: false
   public get created() {
     return this.getNumberAttribute('created');
@@ -96,6 +83,19 @@ export class DataSlackConversation extends cdktf.TerraformDataSource {
   // creator - computed: true, optional: false, required: false
   public get creator() {
     return this.getStringAttribute('creator');
+  }
+
+  // group_id - computed: false, optional: false, required: true
+  private _groupId?: string; 
+  public get groupId() {
+    return this.getStringAttribute('group_id');
+  }
+  public set groupId(value: string) {
+    this._groupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdInput() {
+    return this._groupId;
   }
 
   // id - computed: true, optional: true, required: false
@@ -127,11 +127,6 @@ export class DataSlackConversation extends cdktf.TerraformDataSource {
   // is_org_shared - computed: true, optional: false, required: false
   public get isOrgShared() {
     return this.getBooleanAttribute('is_org_shared');
-  }
-
-  // is_private - computed: true, optional: false, required: false
-  public get isPrivate() {
-    return this.getBooleanAttribute('is_private');
   }
 
   // is_shared - computed: true, optional: false, required: false
@@ -182,7 +177,7 @@ export class DataSlackConversation extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      channel_id: cdktf.stringToTerraform(this._channelId),
+      group_id: cdktf.stringToTerraform(this._groupId),
       id: cdktf.stringToTerraform(this._id),
       purpose: cdktf.stringToTerraform(this._purpose),
       topic: cdktf.stringToTerraform(this._topic),

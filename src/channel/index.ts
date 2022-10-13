@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/slack/r/conversation
+// https://www.terraform.io/docs/providers/slack/r/channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,66 +6,62 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ConversationConfig extends cdktf.TerraformMetaArguments {
+export interface ChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * Either of none or archive
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/conversation#action_on_destroy Conversation#action_on_destroy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/channel#action_on_destroy Channel#action_on_destroy}
   */
   readonly actionOnDestroy: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/conversation#id Conversation#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/channel#id Channel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/conversation#is_archived Conversation#is_archived}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/channel#is_archived Channel#is_archived}
   */
   readonly isArchived?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/conversation#is_private Conversation#is_private}
-  */
-  readonly isPrivate: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/conversation#name Conversation#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/channel#name Channel#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/conversation#purpose Conversation#purpose}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/channel#purpose Channel#purpose}
   */
   readonly purpose?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/conversation#topic Conversation#topic}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/slack/r/channel#topic Channel#topic}
   */
   readonly topic?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/slack/r/conversation slack_conversation}
+* Represents a {@link https://www.terraform.io/docs/providers/slack/r/channel slack_channel}
 */
-export class Conversation extends cdktf.TerraformResource {
+export class Channel extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "slack_conversation";
+  public static readonly tfResourceType = "slack_channel";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/slack/r/conversation slack_conversation} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/slack/r/channel slack_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options ConversationConfig
+  * @param options ChannelConfig
   */
-  public constructor(scope: Construct, id: string, config: ConversationConfig) {
+  public constructor(scope: Construct, id: string, config: ChannelConfig) {
     super(scope, id, {
-      terraformResourceType: 'slack_conversation',
+      terraformResourceType: 'slack_channel',
       terraformGeneratorMetadata: {
         providerName: 'slack',
         providerVersion: '0.8.1',
@@ -82,7 +78,6 @@ export class Conversation extends cdktf.TerraformResource {
     this._actionOnDestroy = config.actionOnDestroy;
     this._id = config.id;
     this._isArchived = config.isArchived;
-    this._isPrivate = config.isPrivate;
     this._name = config.name;
     this._purpose = config.purpose;
     this._topic = config.topic;
@@ -157,22 +152,14 @@ export class Conversation extends cdktf.TerraformResource {
     return this.getBooleanAttribute('is_org_shared');
   }
 
-  // is_private - computed: false, optional: false, required: true
-  private _isPrivate?: boolean | cdktf.IResolvable; 
-  public get isPrivate() {
-    return this.getBooleanAttribute('is_private');
-  }
-  public set isPrivate(value: boolean | cdktf.IResolvable) {
-    this._isPrivate = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get isPrivateInput() {
-    return this._isPrivate;
-  }
-
   // is_shared - computed: true, optional: false, required: false
   public get isShared() {
     return this.getBooleanAttribute('is_shared');
+  }
+
+  // locale - computed: true, optional: false, required: false
+  public get locale() {
+    return this.getStringAttribute('locale');
   }
 
   // name - computed: false, optional: false, required: true
@@ -229,7 +216,6 @@ export class Conversation extends cdktf.TerraformResource {
       action_on_destroy: cdktf.stringToTerraform(this._actionOnDestroy),
       id: cdktf.stringToTerraform(this._id),
       is_archived: cdktf.booleanToTerraform(this._isArchived),
-      is_private: cdktf.booleanToTerraform(this._isPrivate),
       name: cdktf.stringToTerraform(this._name),
       purpose: cdktf.stringToTerraform(this._purpose),
       topic: cdktf.stringToTerraform(this._topic),
