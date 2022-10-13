@@ -2,6 +2,7 @@ import { CdktfProviderProject } from "@cdktf/provider-project";
 import { NpmAccess } from "projen/lib/javascript";
 const project = new CdktfProviderProject({
   author: "Ryan Martin",
+  authorName: "Ryan Martin",
   authorAddress: "ryan.martin@medly.com",
   cdktfVersion: "^0.13.0",
   constructsVersion: "^10.0.0",
@@ -9,12 +10,13 @@ const project = new CdktfProviderProject({
   jsiiVersion: "^1.69.0",
   defaultReleaseBranch: "main",
   devDeps: ["@cdktf/provider-project"],
+  githubNamespace: "skeptools",
   name: "@skeptools/cdktf-provider-slack",
   projenrcTs: true,
   releaseToNpm: true,
   npmAccess: NpmAccess.PUBLIC,
   repositoryUrl: "git@github.com:skeptools/cdktf-provider-slack.git",
-  terraformProvider: "jmatsu/slack@~> 0.8.1",
+  terraformProvider: "jmatsu/slack@~> 0.9.0",
 
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */

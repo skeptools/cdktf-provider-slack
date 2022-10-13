@@ -9,7 +9,7 @@ const semver = require("semver");
 // const { versionMatchesConstraint } = require('cdktf-cli/lib/dependencies/version-constraints');
 
 // set by the projen file that generates this script
-const CONSTRAINT = "~> 0.8.1";
+const CONSTRAINT = "~> 0.9.0";
 const FQ_PROVIDER_NAME = "jmatsu/slack";
 
 (async function main() {

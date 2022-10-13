@@ -1,5 +1,5 @@
 
-# Terraform CDK slack Provider ~> 0.8.1
+# Terraform CDK slack Provider ~> 0.9.0
 
 This repo builds and publishes the Terraform slack Provider bindings for [CDK for Terraform](https://cdk.tf).
 
@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/cdktf/cdktf-provider-slack-go`](https://github.com/cdktf/cdktf-provider-slack-go) package.
+The go package is generated into the [`github.com/skeptools/cdktf-provider-slack-go`](https://github.com/skeptools/cdktf-provider-slack-go) package.
 
-`go get github.com/cdktf/cdktf-provider-slack-go/slack`
+`go get github.com/skeptools/cdktf-provider-slack-go/slack`
 
 ## Docs
 
@@ -49,7 +49,7 @@ You can also visit a hosted version of the documentation on [constructs.dev](htt
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform slack Provider version 1:1. In fact, it always tracks `latest` of `~> 0.8.1` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf/imports).
+This project is explicitly not tracking the Terraform slack Provider version 1:1. In fact, it always tracks `latest` of `~> 0.9.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by generating the [provider constructs manually](https://cdk.tf/imports).
 
 These are the upstream dependencies:
 

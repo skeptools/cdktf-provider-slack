@@ -3,7 +3,7 @@
   "description": "Prebuilt slack Provider for Terraform CDK (cdktf)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cdktf/cdktf-provider-slack.git"
+    "url": "https://github.com/skeptools/cdktf-provider-slack.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -38,7 +38,7 @@
     "build-provider": "yarn fetch && yarn compile && yarn docgen"
   },
   "author": {
-    "name": "HashiCorp",
+    "name": "Ryan Martin",
     "url": "https://hashicorp.com",
     "organization": true
   },
@@ -101,7 +101,7 @@
         "packageId": "HashiCorp.Cdktf.Providers.Slack"
       },
       "go": {
-        "moduleName": "github.com/cdktf/cdktf-provider-slack-go",
+        "moduleName": "github.com/skeptools/cdktf-provider-slack-go",
         "packageName": "slack"
       }
     },
@@ -113,7 +113,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/jmatsu/slack",
-      "version": "0.8.1"
+      "version": "0.9.0"
     }
   },
   "resolutions": {
