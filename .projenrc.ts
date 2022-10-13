@@ -1,11 +1,18 @@
 import { CdktfProviderProject } from "@cdktf/provider-project";
+import { NpmAccess } from "projen/lib/javascript";
 const project = new CdktfProviderProject({
   author: "Ryan Martin",
   authorAddress: "ryan.martin@medly.com",
+  cdktfVersion: "^0.13.0",
+  constructsVersion: "^10.0.0",
+  minNodeVersion: "14.17.0",
+  jsiiVersion: "^1.69.0",
   defaultReleaseBranch: "main",
   devDeps: ["@cdktf/provider-project"],
-  name: "cdktf-provider-slack",
+  name: "@skeptools/cdktf-provider-slack",
   projenrcTs: true,
+  releaseToNpm: true,
+  npmAccess: NpmAccess.PUBLIC,
   repositoryUrl: "git@github.com:skeptools/cdktf-provider-slack.git",
   terraformProvider: "jmatsu/slack@~> 0.8.1",
 

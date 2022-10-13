@@ -45,9 +45,9 @@
   "devDependencies": {
     "@cdktf/provider-project": "^0.2.8",
     "@types/node": "^14",
-    "cdktf": "undefined",
-    "cdktf-cli": "undefined",
-    "constructs": "undefined",
+    "cdktf": "^0.13.0",
+    "cdktf-cli": "^0.13.0",
+    "constructs": "^10.0.0",
     "dot-prop": "^5.2.0",
     "jsii": "^1.69.0",
     "jsii-diff": "^1.69.0",
@@ -61,8 +61,8 @@
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
-    "cdktf": "undefined",
-    "constructs": "undefined"
+    "cdktf": "^0.13.0",
+    "constructs": "^10.0.0"
   },
   "keywords": [
     "cdk",
@@ -71,6 +71,9 @@
     "slack",
     "terraform"
   ],
+  "engines": {
+    "node": ">= 14.17.0"
+  },
   "main": "lib/index.js",
   "license": "MPL-2.0",
   "publishConfig": {
