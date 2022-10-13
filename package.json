@@ -112,8 +112,8 @@
   },
   "cdktf": {
     "provider": {
-      "name": "<unknown>",
-      "version": "<unknown>"
+      "name": "registry.terraform.io/jmatsu/slack",
+      "version": "0.8.1"
     }
   },
   "resolutions": {
