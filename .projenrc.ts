@@ -8,7 +8,7 @@ const project = new CdktfProviderProject({
   minNodeVersion: "14.17.0",
   jsiiVersion: "^1.69.0",
   defaultReleaseBranch: "main",
-  devDeps: ["@cdktf/provider-project"],
+  devDeps: ["@cdktf/provider-project@0.2.66"],
   name: "@skeptools/cdktf-provider-slack",
   projenrcTs: true,
   releaseToNpm: true,
