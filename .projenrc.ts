@@ -10,6 +10,7 @@ const project = new CdktfProviderProject({
   defaultReleaseBranch: "main",
   devDeps: ["@cdktf/provider-project@0.2.66"],
   name: "@skeptools/cdktf-provider-slack",
+  githubNamespace: "skeptools",
   projenrcTs: true,
   releaseToNpm: true,
   npmAccess: NpmAccess.PUBLIC,

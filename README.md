@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/cdktf/cdktf-provider-slack-go`](https://github.com/cdktf/cdktf-provider-slack-go) package.
+The go package is generated into the [`github.com/skeptools/cdktf-provider-slack-go`](https://github.com/skeptools/cdktf-provider-slack-go) package.
 
-`go get github.com/cdktf/cdktf-provider-slack-go/slack`
+`go get github.com/skeptools/cdktf-provider-slack-go/slack`
 
 ## Docs
 

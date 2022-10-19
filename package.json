@@ -3,7 +3,7 @@
   "description": "Prebuilt slack Provider for Terraform CDK (cdktf)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cdktf/cdktf-provider-slack.git"
+    "url": "https://github.com/skeptools/cdktf-provider-slack.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -101,7 +101,7 @@
         "packageId": "HashiCorp.Cdktf.Providers.Slack"
       },
       "go": {
-        "moduleName": "github.com/cdktf/cdktf-provider-slack-go",
+        "moduleName": "github.com/skeptools/cdktf-provider-slack-go",
         "packageName": "slack"
       }
     },
