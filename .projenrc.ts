@@ -1,5 +1,6 @@
 import { CdktfProviderProject } from "@cdktf/provider-project";
 import { NpmAccess } from "projen/lib/javascript";
+const namespace = "skeptools";
 const project = new CdktfProviderProject({
   author: "Ryan Martin",
   authorAddress: "ryan.martin@medly.com",
@@ -10,7 +11,7 @@ const project = new CdktfProviderProject({
   defaultReleaseBranch: "main",
   devDeps: ["rlmartin/cdktf-provider-project#main"],
   name: "@skeptools/cdktf-provider-slack",
-  githubNamespace: "skeptools",
+  namespace,
   projenrcTs: true,
   releaseToNpm: true,
   npmAccess: NpmAccess.PUBLIC,
