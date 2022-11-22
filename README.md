@@ -7,30 +7,30 @@ This repo builds and publishes the Terraform slack Provider bindings for [CDK fo
 
 ### NPM
 
-The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-slack](https://www.npmjs.com/package/@cdktf/provider-slack).
+The npm package is available at [https://www.npmjs.com/package/@skeptools/provider-slack](https://www.npmjs.com/package/@skeptools/provider-slack).
 
-`npm install @cdktf/provider-slack`
+`npm install @skeptools/provider-slack`
 
 ### PyPI
 
-The PyPI package is available at [https://pypi.org/project/cdktf-skeptools-provider-slack](https://pypi.org/project/cdktf-skeptools-provider-slack).
+The PyPI package is available at [https://pypi.org/project/skeptools-cdktf-provider-slack](https://pypi.org/project/skeptools-cdktf-provider-slack).
 
-`pipenv install cdktf-skeptools-provider-slack`
+`pipenv install skeptools-cdktf-provider-slack`
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/HashiCorp.Skeptools.Providers.Slack](https://www.nuget.org/packages/HashiCorp.Skeptools.Providers.Slack).
+The Nuget package is available at [https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Slack](https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Slack).
 
-`dotnet add package HashiCorp.Skeptools.Providers.Slack`
+`dotnet add package HashiCorp.Cdktf.Providers.Slack`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.hashicorp/skeptools-provider-slack](https://mvnrepository.com/artifact/com.hashicorp/skeptools-provider-slack).
+The Maven package is available at [https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-slack](https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-slack).
 
 ```
 <dependency>
     <groupId>com.hashicorp</groupId>
-    <artifactId>skeptools-provider-slack</artifactId>
+    <artifactId>cdktf-provider-slack</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
 ```
@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/cdktf/skeptools-provider-slack-go`](https://github.com/cdktf/skeptools-provider-slack-go) package.
+The go package is generated into the [`github.com/skeptools/cdktf-provider-slack-go`](https://github.com/skeptools/cdktf-provider-slack-go) package.
 
-`go get github.com/cdktf/skeptools-provider-slack-go/slack`
+`go get github.com/skeptools/cdktf-provider-slack-go/slack`
 
 ## Docs
 

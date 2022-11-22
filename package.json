@@ -1,9 +1,9 @@
 {
-  "name": "@cdktf/provider-slack",
+  "name": "@skeptools/provider-slack",
   "description": "Prebuilt slack Provider for Terraform CDK (cdktf)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cdktf/skeptools-provider-slack.git"
+    "url": "https://github.com/skeptools/cdktf-provider-slack.git"
   },
   "scripts": {
     "build": "npx projen build",
@@ -87,22 +87,22 @@
     "outdir": "dist",
     "targets": {
       "java": {
-        "package": "com.hashicorp.skeptools.providers.slack",
+        "package": "com.hashicorp.cdktf.providers.slack",
         "maven": {
           "groupId": "com.hashicorp",
-          "artifactId": "skeptools-provider-slack"
+          "artifactId": "cdktf-provider-slack"
         }
       },
       "python": {
-        "distName": "cdktf-skeptools-provider-slack",
-        "module": "cdktf_skeptools_provider_slack"
+        "distName": "skeptools-cdktf-provider-slack",
+        "module": "skeptools_cdktf_provider_slack"
       },
       "dotnet": {
-        "namespace": "HashiCorp.Skeptools.Providers.Slack",
-        "packageId": "HashiCorp.Skeptools.Providers.Slack"
+        "namespace": "HashiCorp.Cdktf.Providers.Slack",
+        "packageId": "HashiCorp.Cdktf.Providers.Slack"
       },
       "go": {
-        "moduleName": "github.com/cdktf/skeptools-provider-slack-go",
+        "moduleName": "github.com/skeptools/cdktf-provider-slack-go",
         "packageName": "slack"
       }
     },
