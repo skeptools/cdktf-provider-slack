@@ -7,15 +7,15 @@ This repo builds and publishes the Terraform slack Provider bindings for [CDK fo
 
 ### NPM
 
-The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-slack](https://www.npmjs.com/package/@cdktf/provider-slack).
+The npm package is available at [https://www.npmjs.com/package/@skeptools/provider-slack](https://www.npmjs.com/package/@skeptools/provider-slack).
 
-`npm install @cdktf/provider-slack`
+`npm install @skeptools/provider-slack`
 
 ### PyPI
 
-The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-slack](https://pypi.org/project/cdktf-cdktf-provider-slack).
+The PyPI package is available at [https://pypi.org/project/skeptools-cdktf-provider-slack](https://pypi.org/project/skeptools-cdktf-provider-slack).
 
-`pipenv install cdktf-cdktf-provider-slack`
+`pipenv install skeptools-cdktf-provider-slack`
 
 ### Nuget
 
