@@ -4,7 +4,7 @@ import { NpmAccess } from "projen/lib/javascript";
 const nodeVersion = '16';
 const project = new CdktfProviderProject({
   author: "Ryan Martin",
-  authorAddress: "ryan.martin@medly.com",
+  authorAddress: "rlmartin@gmail.com",
   cdktfVersion: "^0.13.0",
   constructsVersion: "^10.0.0",
   minNodeVersion: `${nodeVersion}.0.0`,
