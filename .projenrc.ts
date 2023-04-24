@@ -1,11 +1,15 @@
 import { CdktfProviderProject } from "@cdktf/provider-project";
 import { NpmAccess } from "projen/lib/javascript";
+
+const nodeVersion = '16';
 const project = new CdktfProviderProject({
   author: "Ryan Martin",
   authorAddress: "ryan.martin@medly.com",
   cdktfVersion: "^0.13.0",
   constructsVersion: "^10.0.0",
-  minNodeVersion: "14.17.0",
+  minNodeVersion: `${nodeVersion}.0.0`,
+  maxNodeVersion: nodeVersion,
+  workflowNodeVersion: nodeVersion,
   jsiiVersion: "^1.69.0",
   defaultReleaseBranch: "main",
   devDeps: ["@cdktf/provider-project@~0"],

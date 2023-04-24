@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`slack`](https://www.terraform.io/docs/providers/slack).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@skeptools/provider-slack.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

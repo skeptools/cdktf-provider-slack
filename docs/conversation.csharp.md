@@ -1,3 +1,7 @@
+# `slack_conversation`
+
+Refer to the Terraform Registory for docs: [`slack_conversation`](https://www.terraform.io/docs/providers/slack/r/conversation).
+
 # `conversation` Submodule <a name="`conversation` Submodule" id="@skeptools/provider-slack.conversation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_slack_user`
+
+Refer to the Terraform Registory for docs: [`data_slack_user`](https://www.terraform.io/docs/providers/slack/d/user).
+
 # `dataSlackUser` Submodule <a name="`dataSlackUser` Submodule" id="@skeptools/provider-slack.dataSlackUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

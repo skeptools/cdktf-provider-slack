@@ -1,3 +1,7 @@
+# `slack_usergroup_members`
+
+Refer to the Terraform Registory for docs: [`slack_usergroup_members`](https://www.terraform.io/docs/providers/slack/r/usergroup_members).
+
 # `usergroupMembers` Submodule <a name="`usergroupMembers` Submodule" id="@skeptools/provider-slack.usergroupMembers"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
