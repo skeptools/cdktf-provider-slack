@@ -1,12 +1,15 @@
 {
   "files": [
+    ".copywrite.hcl",
     ".gitattributes",
     ".github/CODEOWNERS",
     ".github/ISSUE_TEMPLATE/config.yml",
     ".github/pull_request_template.md",
     ".github/workflows/alert-open-prs.yml",
     ".github/workflows/auto-close-community-issues.yml",
+    ".github/workflows/auto-close-community-prs.yml",
     ".github/workflows/build.yml",
+    ".github/workflows/force-release.yml",
     ".github/workflows/lock.yml",
     ".github/workflows/next-cdktf-version-pr.yml",
     ".github/workflows/provider-upgrade.yml",
@@ -16,6 +19,7 @@
     ".github/workflows/upgrade-main.yml",
     ".gitignore",
     ".mergify.yml",
+    ".npmrc",
     ".projen/deps.json",
     ".projen/files.json",
     ".projen/tasks.json",
